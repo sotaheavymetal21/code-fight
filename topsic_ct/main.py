@@ -1,7 +1,5 @@
 N = int(input())
 S = [int(input()) for _ in range(N)]
-print(S)
-
 
 x_coordinate = 0
 y_coordinate = 0
