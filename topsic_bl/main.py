@@ -1,5 +1,6 @@
 S = list(input())
 S_len = len(S)
+
 for i in range(S_len):
     if S[i] == "a":
         S[i] = 1
@@ -19,10 +20,11 @@ for i in range(S_len):
         S[i] = 8
     elif S[i] == "l":
         S[i] = 9
+
 ans = 0
+
 for j in range(S_len - 1):
-    print(j)
     ans += (abs(S[j] - S[j + 1]) + 1)
-    print(ans)
+
 ans = ans + S[0]
 print(ans)

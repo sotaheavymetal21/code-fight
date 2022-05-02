@@ -1,10 +1,15 @@
 S = input()
 
-len_S = len(S)
+S_len = len(S)
 
-count = 1
-for i in range(len_S-1):
-    if S[i] != S[i+1]:
-        count += 1
+count = 0
+
+count = S_len
+
+for i in range(S_len):
+    for j in range(i+1, S_len):
+            if S[i] == S[j]:
+                count = count - 1
+                break
 
 print(count)
