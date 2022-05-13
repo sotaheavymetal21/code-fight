@@ -6,9 +6,9 @@ A = list(map(int, input().split()))
 flag = True
 
 # N-2で繰り返し処理、足して割ったものの方が大きかったらFalseに変えて終了する
-for i in range(N - 2):
+for i in range(1, N - 1):
     # print(i, A[i])
-    if (A[i] + A[i + 2]) // 2 >= A[i + 1]:
+    if (A[i - 1] + A[i + 1]) // 2 >= A[i]:
         flag = False
         break
 

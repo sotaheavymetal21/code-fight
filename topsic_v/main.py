@@ -1,6 +1,6 @@
 N = int(input())
-
 S = input()
+
 S_list = list(S)
 
 count = 1

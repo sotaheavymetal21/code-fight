@@ -1,15 +1,25 @@
-S = input()
+S = list(input())
+print(S) # ['a', 'a', 'b', 'b', 'c', 'c']
 
-S_len = len(S)
+set_S = set(S)
+print(set_S) # {'b', 'a', 'c'}
 
-count = 0
+ans = len(set_S)
+print(ans)
 
-count = S_len
 
-for i in range(S_len):
-    for j in range(i+1, S_len):
-            if S[i] == S[j]:
-                count = count - 1
-                break
+# S = input()
 
-print(count)
+# S_len = len(S)
+
+# count = 0
+
+# count = S_len
+
+# for i in range(S_len):
+    # for j in range(i+1, S_len):
+            # if S[i] == S[j]:
+                # count = count - 1
+                # break
+
+# print(count)
